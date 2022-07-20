@@ -2,18 +2,9 @@ import express from "express";
 import exphbs from "express-handlebars";
 import path from "path";
 import morgan from "morgan";
-// import session from "express-session";
-// import flash from "connect-flash";
-// import projectsRoutes from './routes/projects.routes.js'
-// import tasksRoutes from './routes/tasks.routes.js'
 import usersRoutes from './routes/users.routes'
-// import redsocial from './routes/red-social.routes.js'
-// import contactos from './routes/contactos.routes.js'
-// import listas from './routes/listas.routes.js'
-// import indexRoutes from './routes/index.routes.js'
+
 import cors from 'cors'
-// import passport from "passport";
-// import dataUsers from './routes/index.routes.js'
 import cookieParser from 'cookie-parser'
 
 
@@ -21,11 +12,6 @@ import main from './database/start_bd.js' //para iniciar la base de datos
 main()
 
 const Handlebars = require('handlebars');
-
-// import  './models/sessions.js'
-// import {sequelize} from "./database/database.js";
-
-// var SequelizeStore = require("connect-session-sequelize")(session.Store)
 
 const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access');
 import config from './config.js';
